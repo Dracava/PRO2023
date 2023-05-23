@@ -2,17 +2,17 @@ let r = 0;
 let g = 0;
 let b = 0;
 
-let hourR = 0;
-let hourG = 0;
-let hourB = 0;
+let hourR = 255;
+let hourG = 255;
+let hourB = 255;
 
-let minuteR = 0;
-let minuteG = 0;
-let minuteB = 0;
+let minuteR = 255;
+let minuteG = 255;
+let minuteB = 255;
 
-let secondR = 0;
-let secondG = 0;
-let secondB = 0;
+let secondR = 255;
+let secondG = 255;
+let secondB = 255;
 
 function setup() {
   createCanvas(windowWidth, windowHeight); //this is so that the canvas is full screen
