@@ -34,9 +34,9 @@ function draw() {
     clockColorR = 200;
     clockColorG = 230;
     clockColorB = 180;
-    textColorR = 20;
-    textColorG = 140;
-    textColorB = 50;
+    textColorR = 8;
+    textColorG = 95;
+    textColorB = 29;
   } else if (season === 'summer') {
     backgroundColorR = 255;
     backgroundColorG = 198;
@@ -44,9 +44,9 @@ function draw() {
     clockColorR = 255;
     clockColorG = 240;
     clockColorB = 200;
-    textColorR = 255;
-    textColorG = 198;
-    textColorB = 37;
+    textColorR = 235;
+    textColorG = 149;
+    textColorB = 0;
   } else if (season === 'autumn') {
     backgroundColorR = 205;
     backgroundColorG = 90;
@@ -54,9 +54,9 @@ function draw() {
     clockColorR = 240;
     clockColorG = 200;
     clockColorB = 180;
-    textColorR = 205;
-    textColorG = 90;
-    textColorB = 32;
+    textColorR = 125;
+    textColorG = 64;
+    textColorB = 10;
   } else if (season === 'winter') {
     backgroundColorR = 34;
     backgroundColorG = 67;
@@ -64,9 +64,9 @@ function draw() {
     clockColorR = 200;
     clockColorG = 220;
     clockColorB = 255;
-    textColorR = 34;
-    textColorG = 67;
-    textColorB = 158;
+    textColorR = 8;
+    textColorG = 94;
+    textColorB = 55;
   }
 
   fill(clockColorR,clockColorG,clockColorB);
