@@ -2,6 +2,18 @@ let r = 0;
 let g = 0;
 let b = 0;
 
+let hourR = 0;
+let hourG = 0;
+let hourB = 0;
+
+let minuteR = 0;
+let minuteG = 0;
+let minuteB = 0;
+
+let secondR = 0;
+let secondG = 0;
+let secondB = 0;
+
 function setup() {
   createCanvas(windowWidth, windowHeight); //this is so that the canvas is full screen
 }
@@ -21,9 +33,12 @@ function draw() {
   fill(255);
 
   noStroke();
-  rect(secondX - 50, 0, 100, map(sc, 0, 60, 0, height));
-  rect(minuteX - 100, 0, 200, map(mn, 0, 60, 0, height));
+  fill(hourR, hourG, hourB);
   rect(hourX - 150, 0, 300, map(hr, 0, 24, 0, height));
+  fill(minuteR, minuteG, minuteB);
+  rect(minuteX - 100, 0, 200, map(mn, 0, 60, 0, height));
+  fill(secondR, secondG, secondB);
+  rect(secondX - 50, 0, 100, map(sc, 0, 60, 0, height));
 
   fill(0);
   text(hr, hourX - 5, map(hr, 0, 24, 0, height) - 20);
@@ -113,6 +128,15 @@ function draw() {
 }
 
 function mousePressed() {
-  fill(0);
-  ellipse(mouseX, mouseY, 10, 10);
+  hourR = random(255);
+  hourG = random(255);
+  hourB = random(255);
+
+  minuteR = random(255);
+  minuteG = random(255);
+  minuteB = random(255);
+
+  secondR = random(255);
+  secondG = random(255);
+  secondB = random(255);
 }
