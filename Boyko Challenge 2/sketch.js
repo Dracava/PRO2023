@@ -25,8 +25,12 @@ function draw() {
   let sc = second();
   let season = getSeason();
 
+
   // Set background color based on the current season
   if (season === 'spring') {
+    backgroundColorR = 20;
+    backgroundColorG = 140;
+    backgroundColorB = 50;
     clockColorR = 200;
     clockColorG = 230;
     clockColorB = 180;
@@ -34,6 +38,9 @@ function draw() {
     textColorG = 140;
     textColorB = 50;
   } else if (season === 'summer') {
+    backgroundColorR = 255;
+    backgroundColorG = 198;
+    backgroundColorB = 37;
     clockColorR = 255;
     clockColorG = 240;
     clockColorB = 200;
@@ -41,6 +48,9 @@ function draw() {
     textColorG = 198;
     textColorB = 37;
   } else if (season === 'autumn') {
+    backgroundColorR = 205;
+    backgroundColorG = 90;
+    backgroundColorB = 32;
     clockColorR = 240;
     clockColorG = 200;
     clockColorB = 180;
@@ -48,6 +58,9 @@ function draw() {
     textColorG = 90;
     textColorB = 32;
   } else if (season === 'winter') {
+    backgroundColorR = 34;
+    backgroundColorG = 67;
+    backgroundColorB = 158;
     clockColorR = 200;
     clockColorG = 220;
     clockColorB = 255;
@@ -63,9 +76,11 @@ function draw() {
   textSize(48);
 
   // Display season text
+  if(mouseIsPressed == true){
   textSize(50);
   fill(textColorR, textColorG, textColorB);
-  text(season.toUpperCase(), 0, windowHeight/2-50);
+  text(season.toUpperCase(), 0, windowHeight/2-60);
+  }
 
   rotate(-90); // To make the starting point from the top (270 degrees) instead of the right (360 degrees)
 
@@ -97,12 +112,6 @@ function draw() {
   fill(255, 255, 0); // Yellow color for hours hand
   text(hr, 50, 10);
   pop();
-}
-
-function mouseClicked() {
-  backgroundColorR = random(255);
- backgroundColorG = random(255);
- backgroundColorB = random(255);
 }
 
 function getSeason() {
