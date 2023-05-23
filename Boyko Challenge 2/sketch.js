@@ -79,7 +79,7 @@ function draw() {
   if(mouseIsPressed == true){
   textSize(50);
   fill(textColorR, textColorG, textColorB);
-  text(season.toUpperCase(), 0, windowHeight/2-60);
+  text(season.toUpperCase(), 0, 0);
   }
 
   rotate(-90); // To make the starting point from the top (270 degrees) instead of the right (360 degrees)
